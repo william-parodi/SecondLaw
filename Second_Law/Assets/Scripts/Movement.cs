@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float coFriction;
 
     public Rigidbody2D player; 
 
@@ -31,13 +30,11 @@ public class Movement : MonoBehaviour
 
         //Checks if the character moves off screen and initiates game over if it is
         //Implementation is kinda crap
-        //Vector2 playerPosition = Camera.main.WorldToScreenPoint(player.position);
-       // if (Math.Abs(playerPosition.y) > Screen.height + 4 || Math.Abs(playerPosition.x) > Screen.width + 4){
-        //    gameOver();
-        //}
+       
     }
 
     private void OnTriggerEnter2D (Collider2D collision){
+        print("enter!");
         gameOver();
     }
     void gameOver(){
