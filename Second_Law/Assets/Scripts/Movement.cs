@@ -6,7 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 
-    public Rigidbody2D player; 
+    public Rigidbody2D player;
 
     Touch touch;
     Vector2 touchPosition;
@@ -14,7 +14,9 @@ public class Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Vector2 startPosition = GameObject.FindGameObjectWithTag("startPosition").transform.position;
         player.freezeRotation = true;
+        player.position = startPosition;
         print(player);
     }
 
@@ -32,10 +34,14 @@ public class Movement : MonoBehaviour
         }
        
     }
-
     private void OnTriggerEnter2D (Collider2D collision){
-        print("enter!");
-        gameOver();
+        if (collision.tag == "endZone"){
+            print("you win!");
+        }
+        else if (collision.tag == "outOfBounds") {
+            gameOver();
+        }
+ 
     }
     void gameOver(){
         print("game over");
