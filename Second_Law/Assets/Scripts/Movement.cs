@@ -21,15 +21,15 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //Applies a force relative to the distance the click is away 
-        //from the center and the angle it is from the horizontal
-        if (Input.GetMouseButtonDown(0)){
-            touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            player.AddForce(touchPosition, ForceMode2D.Impulse);
-        }
+        if (!(Pause_Menu.isPaused)){
+            //Applies a force relative to the distance the click is away 
+            //from the center and the angle it is from the horizontal
+            if (Input.GetMouseButtonDown(0)){
+                touchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                player.AddForce(touchPosition, ForceMode2D.Impulse);
+            }
 
-        //Checks if the character moves off screen and initiates game over if it is
-        //Implementation is kinda crap
+        }
        
     }
 
