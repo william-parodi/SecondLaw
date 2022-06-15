@@ -5,28 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class changeDifficulty : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject difficultyUI;
+    public GameObject pauseMenuUI;
+    public Rigidbody2D player;
+
     void Start()
     {
         
     }
 
     public void Easy(){
-
+        player.drag = 1f;
+        print("easy");
+        Back();
     }
 
     public void Medium(){
-
+        player.drag = .5f;
+        Back();
     }
 
     public void Hard(){
-
+        player.drag = 0f;
+        Back();
     }
 
     public void Back(){
-        if (Pause_Menu.isPaused){
-            SceneManager.LoadScene("SampleScene");
-            Pause_Menu.Pause();
-        }
+        difficultyUI.SetActive(false);
+        pauseMenuUI.SetActive(true);
     }
 }

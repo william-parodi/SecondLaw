@@ -8,12 +8,14 @@ public class Pause_Menu : MonoBehaviour
     public static bool isPaused = false; 
 
     public GameObject pauseMenuUI;
-
     public GameObject pauseButton;
+    public GameObject difficultyUI;
+    
     // Update is called once per frame
     void Start()
     {
         pauseMenuUI.SetActive(false);
+        difficultyUI.SetActive(false);
     }
 
     public void Resume(){
@@ -35,6 +37,7 @@ public class Pause_Menu : MonoBehaviour
     }
 
     public void difficultyMenu() {
-        SceneManager.LoadScene("Change Difficulty");
+        pauseMenuUI.SetActive(false);
+        difficultyUI.SetActive(true);
     }
 }
