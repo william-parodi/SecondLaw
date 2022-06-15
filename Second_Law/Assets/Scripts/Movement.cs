@@ -47,7 +47,7 @@ public class Movement : MonoBehaviour
             print("you win!");
             resetPlayer();
         }
-        else if (collision.tag == "outOfBounds") {
+        else if (collision.tag == "death") {
             gameOver();
             resetPlayer();
         }

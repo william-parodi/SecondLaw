@@ -6,7 +6,7 @@ TagManager:
   tags:
   - startPosition
   - endZone
-  - outOfBounds
+  - death
   layers:
   - Default
   - TransparentFX
