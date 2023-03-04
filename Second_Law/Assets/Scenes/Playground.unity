@@ -1881,6 +1881,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769436363}
   m_CullTransparentMesh: 1
+--- !u!1 &1848327437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5461180483792744311, guid: 8885a68b608ecb3459dc50ac545d8f8a, type: 3}
+  m_PrefabInstance: {fileID: 5461180483198510830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1848327438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848327437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b563e58bc4de6ee4595afecbf81aee55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 582586466}
+  pauseButton: {fileID: 1003755413}
+  difficultyUI: {fileID: 535268032}
 --- !u!1 &1891263378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,7 +2824,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.801}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -374, y: -189}
+  m_AnchoredPosition: {x: -405.3, y: -163.4}
   m_SizeDelta: {x: 68.698, y: 36.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1032195127449004471
@@ -3202,11 +3222,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5461180483792744306, guid: 8885a68b608ecb3459dc50ac545d8f8a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.4
       objectReference: {fileID: 0}
     - target: {fileID: 5461180483792744306, guid: 8885a68b608ecb3459dc50ac545d8f8a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 5461180483792744306, guid: 8885a68b608ecb3459dc50ac545d8f8a, type: 3}
       propertyPath: m_LocalPosition.z
